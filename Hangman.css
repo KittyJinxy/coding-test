@@ -1,0 +1,101 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    background-color: white;
+    font-family: Helvetica;
+    color: rgb(52, 81, 108);
+    margin: 0; 
+    padding: 0;
+}
+
+h1 {
+    margin-left: 35px;
+}
+
+.justforfun{
+    animation: shake 0.5s;
+    animation-iteration-count: 7.0s;
+      }
+      
+    @keyframes shake {
+        0% { transform: translate(1px, 1px) rotate(0deg); }
+        10% { transform: translate(-1px, -2px) rotate(-1deg); }
+        20% { transform: translate(-3px, 0px) rotate(1deg); }
+        30% { transform: translate(3px, 2px) rotate(0deg); }
+        40% { transform: translate(1px, -1px) rotate(1deg); }
+        50% { transform: translate(-1px, 2px) rotate(-1deg); }
+        60% { transform: translate(-3px, 1px) rotate(0deg); }
+        70% { transform: translate(3px, 1px) rotate(-1deg); }
+        80% { transform: translate(-1px, -1px) rotate(1deg); }
+        90% { transform: translate(1px, 2px) rotate(0deg); }
+        100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+.main-container{
+    height:500px;
+}
+
+#letter {
+    margin-left: 40px;
+    padding: 10px;
+    border: 1px solid rgb(52, 81, 108);
+    background-color: transparent;
+}
+
+
+ .letter {
+    display: inline-block;
+    list-style: none;
+    width: 20px;
+    margin: 0 5px;
+    padding-top: 10px;
+    border-bottom: 1px solid rgb(52, 81, 108); 
+    text-align: center;
+    color: transparent;
+}
+.current-word {
+    list-style: none;
+}
+
+#man {
+    margin-bottom: 70px;
+}
+
+#guess {
+    margin-left: 10px;
+    padding: 10px;
+    border: 1px solid rgb(52, 81, 108);
+    background-color: transparent;
+    color: rgb(52, 81, 108);
+}
+
+#restart {
+    margin-left: 10px;
+    padding: 10px;
+    border: 1px solid rgb(52, 81, 108);
+    background-color: transparent;
+    color: rgb(52, 81, 108);
+}
+
+.output {
+    opacity: 0;
+    transition: opacity 1s ease;
+}
+.correct {
+    background-color: rgb(0, 98, 80);
+    transition: all 1s ease;
+    color:lightgrey;
+}
+.error {
+    color: red;
+    opacity: 1;
+}
+.warning {
+    color: orange;
+    opacity: 1;
+}
+.win {
+    color: green;
+    opacity: 1;
+}
